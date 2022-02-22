@@ -16,3 +16,8 @@ func (g *Group) NewGroup(path string) *Group {
 		parent:  g,
 	}
 }
+
+// Parent gets the group's parent in the group tree.
+func (g *Group) Parent() *Group {
+	return g.parent
+}
